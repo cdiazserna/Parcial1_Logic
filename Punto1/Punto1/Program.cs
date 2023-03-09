@@ -6,7 +6,7 @@ namespace Punto1
     {
         static void Main(string[] args)
         {
-            double lado, b, altura, areaCuad, areaTrian, areaRectan, areaCirc;
+            double lado, b, altura,radio, areaCuad, areaTrian, areaRectan, areaCircu;
             int option;
 
             Console.WriteLine("******");
@@ -28,6 +28,9 @@ namespace Punto1
             Console.WriteLine("Por favor ingrese el lado");
             altura = Convert.ToDouble(Console.ReadLine());
 
+            Console.WriteLine("Por favor ingrese el lado");
+            radio = Convert.ToDouble(Console.ReadLine());
+
 
 
             switch (option)
@@ -35,6 +38,28 @@ namespace Punto1
                 case 1:
 
                     areaCuad = Math.Pow(lado, 2);
+                    Console.WriteLine($"El área del cuadrado es: {areaCuad}");
+                    break;
+
+                case 2:
+
+                    areaRectan = b * altura ;
+                    Console.WriteLine($"El área del rectángulo es: {areaRectan}");
+                    break;
+
+                case 3:
+
+                    areaTrian = (b * altura) / 2;
+                    Console.WriteLine($"Elk área del triángulo es: {areaTrian}");
+                    break;
+
+                case 4:
+
+                    areaCircu = Math.PI * Math.Pow(radio,2);
+                    Console.WriteLine($"Elk área del círculo es: {areaCircu}");
+                    break;
+
+
 
             }
 
