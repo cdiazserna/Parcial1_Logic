@@ -17,19 +17,31 @@ namespace ConsoleApp1
             int response = Convert.ToInt32(Console.ReadLine());
             bool switch1 = true;
 
-            while (switch1)
+            bool switchPrincipal = true;
+
+            while (switchPrincipal)
+
             {
-
-                if (response == 1 | response == 2 | response == 3 | response == 4)
+                while (switch1)
                 {
-                    switch1 = false;
-                }
-                else
-                {
-                    Console.WriteLine("ingrese una opción valida");
-                    response = Convert.ToInt32(Console.ReadLine());
+
+                    if (response == 1 | response == 2 | response == 3 | response == 4 )
+                    {
+                        switch1 = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("ingrese una opción valida");
+                        response = Convert.ToInt32(Console.ReadLine());
+                    }
+
                 }
 
+                if (response == 0)
+                {
+                    Console.WriteLine("ha salido correctamente.la ejecución ha finalizado");
+                    switchPrincipal= false;
+                }
 
 
             }
