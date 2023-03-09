@@ -16,7 +16,7 @@ namespace ConsoleApp1
 
             int response = Convert.ToInt32(Console.ReadLine());
             bool switch1 = true;
-
+            Console.Clear();
             bool switchPrincipal = true;
 
             while (switchPrincipal)
@@ -25,7 +25,7 @@ namespace ConsoleApp1
                 while (switch1)
                 {
 
-                    if (response == 1 | response == 2 | response == 3 | response == 4 )
+                    if (response == 1 | response == 2 | response == 3 | response == 4 | response == 0 )
                     {
                         switch1 = false;
                     }
@@ -41,6 +41,41 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("ha salido correctamente.la ejecución ha finalizado");
                     switchPrincipal= false;
+                }
+                else
+                {
+                    switch (response)
+                    {
+                        case 1:
+                            double radio, area;
+                            Console.WriteLine("Calculadora de área de un círculo\n");
+                            Console.Write("Ingresa el radio del círculo: ");
+                            radio = double.Parse(Console.ReadLine());
+
+                            area = Math.PI * Math.Pow(radio, 2);
+
+                            Console.WriteLine("El área del círculo es: " + area);
+
+                            break;
+
+                            case 2:
+
+                            double baseRectangulo, alturaRectangulo, areaRectangulo;
+
+                            Console.WriteLine("Calculadora de área de un rectángulo\n");
+                            Console.Write("Ingresa la base del rectángulo: ");
+                            baseRectangulo = double.Parse(Console.ReadLine());
+                            Console.Write("Ingresa la altura del rectángulo: ");
+                            alturaRectangulo = double.Parse(Console.ReadLine());
+
+                            areaRectangulo = baseRectangulo * alturaRectangulo;
+
+                            Console.WriteLine("El área del rectángulo es: " + areaRectangulo);
+                            break;
+
+                            case 3:
+                    }
+
                 }
 
 
