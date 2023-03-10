@@ -13,7 +13,7 @@ namespace ConsoleApp1
             Console.WriteLine("2. Calcular rectangulo");
             Console.WriteLine("3. Calcular triangulo");
             Console.WriteLine("4. Calcular círculo");
-
+/*
             int response = Convert.ToInt32(Console.ReadLine());
             bool switch1 = true;
             Console.Clear();
@@ -63,18 +63,16 @@ namespace ConsoleApp1
                             case 4:
 
                             Console.WriteLine("Circulo");
-
-
                             break;
                     }
 
                 }
 
-*/
+
             }
                 
         }
-                
-    }
+            */    
+        }
 }
 
