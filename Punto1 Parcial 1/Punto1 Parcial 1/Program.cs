@@ -78,16 +78,20 @@ namespace Punto1_Parcial_1
                                         case 3:
 
                                         Console.WriteLine("Ingrese la base del triángulo:");
-                            double baseTriangulo = Convert.ToDouble(Console.ReadLine());
-                            Console.WriteLine("Ingrese la altura del triángulo:");
-                            double alturaTriangulo = Convert.ToDouble(Console.ReadLine());
-                            double area = (baseTriangulo * alturaTriangulo) / 2;
-                            Console.WriteLine("El área del triángulo es: " + area);
-                            break;
+                                        double baseTriangulo = Convert.ToDouble(Console.ReadLine());
+                                        Console.WriteLine("Ingrese la altura del triángulo:");
+                                        double alturaTriangulo = Convert.ToDouble(Console.ReadLine());
+                                        area = (baseTriangulo * alturaTriangulo) / 2;
+                                        Console.WriteLine("El área del triángulo es: " + area);
+                                        break;
 
                                         case 4:
+                                        Console.WriteLine("Ingrese el radio del círculo:");
+                                        double radio = Convert.ToDouble(Console.ReadLine());
+                                        double area = 3.14159 * radio * radio;
+                                        Console.WriteLine("El área del círculo es: " + area);
 
-                                        Console.WriteLine("Circulo");
+                            Console.WriteLine("Circulo");
                                         break;
                                 }
 
