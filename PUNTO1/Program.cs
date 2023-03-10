@@ -61,7 +61,7 @@ namespace PUNTO1
                         Console.WriteLine("Ingrese el valor de la altura");
                         segundonum = Convert.ToInt32(Console.ReadLine());
 
-                        tria = (primernum + segundonum) / 2;
+                        tria = (primernum * segundonum) / 2;
                         Console.WriteLine("El área de su triángulo es:" + tria);
                         break;
                     case 4:
@@ -81,9 +81,14 @@ namespace PUNTO1
                         break;
                 }
 
+                Console.WriteLine("Presione 1 para volver al menú y hacer otra operación o 0 para salir del programa");
+                menu=Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+
+
             }
 
-
+            //Enmanuelle Perez
 
         }
     }
