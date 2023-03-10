@@ -6,7 +6,16 @@ namespace PUNTO2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int numero;
+            double promedio;
+            int nummayor, nummenor, numprimos;
+
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+            Console.WriteLine("OPERACIONES ENTRE N NÚMEROS NATURALES");
+            Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+
+
+
         }
     }
 }
