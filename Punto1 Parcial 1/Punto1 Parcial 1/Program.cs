@@ -9,21 +9,27 @@ namespace Punto1_Parcial_1
             Console.WriteLine("aplicación para Calcular área de un cuadrado, rectángulo, triángulo, círculo");
             Console.WriteLine("Porfavor seleccion una opción");
 
-            Console.WriteLine("1. Calcular cuadradao");
-            Console.WriteLine("2. Calcular rectangulo");
-            Console.WriteLine("3. Calcular triangulo");
-            Console.WriteLine("4. Calcular círculo");
+
             
-                        int response = Convert.ToInt32(Console.ReadLine());
+                        int response = 0;
                         bool switch1 = true;
-                        Console.Clear();
+                        //Console.Clear();
                         bool switchPrincipal = true;
 
-                        //while (switchPrincipal)
+                        while (switchPrincipal)
 
-                        //{
+                        {
+                        //response = Convert.ToInt32(Console.ReadLine());
                             while (switch1)
                             {
+                            Console.WriteLine("1. Calcular cuadradao");
+                            Console.WriteLine("2. Calcular rectangulo");
+                            Console.WriteLine("3. Calcular triangulo");
+                            Console.WriteLine("4. Calcular círculo");
+                            Console.WriteLine("0. Salir");
+
+                    response = Convert.ToInt32(Console.ReadLine());
+                            
 
                                 if (response == 1 | response == 2 | response == 3 | response == 4 | response == 0 )
                                 {
@@ -54,16 +60,30 @@ namespace Punto1_Parcial_1
                                         double area = lado * lado;
                                         Console.WriteLine("El área del cuadrado es: " + area);
                                         switch1 = true;
+                                        switchPrincipal= true;
                                         break;
 
                                         case 2:
-                                        Console.WriteLine("Rectangulo");
-                                        break;
+                                            Console.WriteLine("Ingrese la longitud del lado del rectángulo:");
+                                            double largo = Convert.ToDouble(Console.ReadLine());
+                                            Console.WriteLine("Ingrese la anchura del rectángulo:");
+                                            double ancho = Convert.ToDouble(Console.ReadLine());
+                                            area = largo * ancho;
+                                            Console.WriteLine("El área del rectángulo es: " + area);
+
+                                            switch1 = true;
+                                            switchPrincipal = true;
+                                            break;
 
                                         case 3:
 
-                                        Console.WriteLine("Triangulo");
-                                        break;
+                                        Console.WriteLine("Ingrese la base del triángulo:");
+                            double baseTriangulo = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine("Ingrese la altura del triángulo:");
+                            double alturaTriangulo = Convert.ToDouble(Console.ReadLine());
+                            double area = (baseTriangulo * alturaTriangulo) / 2;
+                            Console.WriteLine("El área del triángulo es: " + area);
+                            break;
 
                                         case 4:
 
@@ -71,7 +91,7 @@ namespace Punto1_Parcial_1
                                         break;
                                 }
 
-                            //}
+                            }
 
 
                         }
