@@ -4,10 +4,10 @@ namespace Punto1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int opcion, shtw = 1;
-            double num1, num2, num3, cuadrado, rectangulo, triangulo, circulo;
+            int opcion ;
+            double num1, num2, cuadrado, rectangulo, triangulo;
 
 
 
@@ -33,25 +33,44 @@ namespace Punto1
             switch (opcion)
             {
                 case 0:
-                    shtw=0;
+                    
                 
-                    break;
+                    
                     case 1:
                     Console.WriteLine("Ingresa Por Favor el valor del Lado del Cuadrado");
-                    num1= Convert.ToInt32(Console.ReadLine());
+                    num1= Convert.ToDouble(Console.ReadLine());
                     cuadrado = num1 * num1;
-
-                    Console.WriteLine(" ");
-                    Console.WriteLine(cuadrado);
+                    Console.WriteLine("EL Resultado es: " + cuadrado);
                     break;
                 case 2:
                     Console.WriteLine("Ingresa Por Favor el valor de la BASE");
-                    num1= Convert.ToInt32(Console.ReadLine());
+                    num1= Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine(" ");
                     Console.WriteLine("Ingresa Por Favor el Valor de la ALTURA");
-                    num2 = Convert.ToInt32(Console.ReadLine());
-                    rectangulo = num1 * num2;
+                    num2 = Convert.ToDouble(Console.ReadLine());
+                    rectangulo = num1*num2;
+
+                    Console.WriteLine("el resultado es: " + rectangulo);
                     break;
+
+                case 3:
+
+                    Console.WriteLine(" Ingresa por favor La BASE ");
+                        num1= Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("Ingresa Por Favor La ALTURA");
+                    num2= Convert.ToDouble(Console.ReadLine());
+
+                    triangulo = (num1 * num2) / 2;
+
+
+                    Console.WriteLine("El resultado es: " + triangulo);
+                    break;
+
+
+
+
+
 
 
 
