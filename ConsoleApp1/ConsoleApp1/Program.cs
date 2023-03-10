@@ -47,20 +47,19 @@ namespace ConsoleApp1
                     switch (response)
                     {
                         case 1:
-                            double radio, area;
-                            Console.WriteLine("Calculadora de área de un círculo\n");
-                            Console.Write("Ingresa el radio del círculo: ");
-                            radio = double.Parse(Console.ReadLine());
+                            double baseRectangulo, areaRectangulo;
+                            Console.WriteLine("Calculadora de área de un rectángulo\n");
+                            Console.Write("Ingresa la base del rectángulo: ");
+                            baseRectangulo = Convert.ToDouble(Console.ReadLine());
 
-                            area = Math.PI * Math.Pow(radio, 2);
 
-                            Console.WriteLine("El área del círculo es: " + area);
-
+                            areaRectangulo = baseRectangulo * baseRectangulo;
+                            Console.WriteLine("El área del cuadrado es: " + areaRectangulo);
                             break;
 
                             case 2:
 
-                            double baseRectangulo, alturaRectangulo, areaRectangulo;
+                            double alturaRectangulo;
 
                             Console.WriteLine("Calculadora de área de un rectángulo\n");
                             Console.Write("Ingresa la base del rectángulo: ");
@@ -74,6 +73,33 @@ namespace ConsoleApp1
                             break;
 
                             case 3:
+
+                            double baseTriangulo, alturaTriangulo, areaTriangulo;
+
+                            Console.WriteLine("Calculadora de área de un triángulo\n");
+                            Console.Write("Ingresa la base del triángulo: ");
+                            baseTriangulo = double.Parse(Console.ReadLine());
+                            Console.Write("Ingresa la altura del triángulo: ");
+                            alturaTriangulo = double.Parse(Console.ReadLine());
+
+                            areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+
+                            Console.WriteLine("El área del triángulo es: " + areaTriangulo);
+                            break;
+
+                            case 4:
+
+                            double radio, area;
+
+                            Console.WriteLine("Calculadora de área de un círculo\n");
+                            Console.Write("Ingresa el radio del círculo: ");
+                            radio = double.Parse(Console.ReadLine());
+
+                            area = Math.PI * Math.Pow(radio, 2);
+
+                            Console.WriteLine("El área del círculo es: " + area);
+
+                            break;
                     }
 
                 }
