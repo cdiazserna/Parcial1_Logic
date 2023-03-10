@@ -36,76 +36,36 @@ namespace ConsoleApp1
                     }
 
                 }
-
+                
                 if (response == 0)
                 {
                     Console.WriteLine("ha salido correctamente.la ejecución ha finalizado");
                     switchPrincipal= false;
                 }
-                /*
+                
                 else
                 {
                     switch (response)
                     {
                         case 1:
-                            double baseRectangulo, areaRectangulo;
-                            Console.WriteLine("Calculadora de área de un rectángulo\n");
-                            Console.Write("Ingresa la base del rectángulo: ");
-                            baseRectangulo = Convert.ToDouble(Console.ReadLine());
-
-                            switch1 = false;
-
-                            areaRectangulo = baseRectangulo * baseRectangulo;
-                            Console.WriteLine("El área del cuadrado es: " + areaRectangulo);
+                            Console.WriteLine("cuadrado");
                             break;
 
                             case 2:
-
-                            double alturaRectangulo;
-
-                            Console.WriteLine("Calculadora de área de un rectángulo\n");
-                            Console.Write("Ingresa la base del rectángulo: ");
-                            baseRectangulo = Convert.ToDouble(Console.ReadLine());
-                            Console.Write("Ingresa la altura del rectángulo: ");
-                            alturaRectangulo = Convert.ToDouble(Console.ReadLine());
-
-                            switch1 = false;
-
-                            areaRectangulo = baseRectangulo * alturaRectangulo;
-
-                            Console.WriteLine("El área del rectángulo es: " + areaRectangulo);
+                            Console.WriteLine("Rectangulo");
                             break;
 
                             case 3:
 
-                            double baseTriangulo, alturaTriangulo, areaTriangulo;
+                            Console.WriteLine("Triangulo");
 
-                            Console.WriteLine("Calculadora de área de un triángulo\n");
-                            Console.Write("Ingresa la base del triángulo: ");
-                            baseTriangulo = Convert.ToDouble(Console.ReadLine());
-                            Console.Write("Ingresa la altura del triángulo: ");
-                            alturaTriangulo = Convert.ToDouble(Console.ReadLine());
-
-                            areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-
-                            switch1 = false;
-
-                            Console.WriteLine("El área del triángulo es: " + areaTriangulo);
+                            
                             break;
 
                             case 4:
 
-                            double radio, area;
+                            Console.WriteLine("Circulo");
 
-                            Console.WriteLine("Calculadora de área de un círculo\n");
-                            Console.Write("Ingresa el radio del círculo: ");
-                            radio = Convert.ToDouble(Console.ReadLine());
-
-                            switch1 = false;
-
-                            area = 3.1416 * (radio * radio);
-
-                            Console.WriteLine("El área del círculo es: " + area);
 
                             break;
                     }
