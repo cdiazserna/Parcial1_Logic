@@ -34,8 +34,7 @@ namespace Punto1
                         Console.WriteLine("Digite el lado del cubo:");
                         ladcuad=Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("el area del cubo es :"+(ladcuad*ladcuad)); 
-                        Console.WriteLine("seleccione una nueva opcion"); 
-                        option=Convert.ToInt32(Console.ReadLine());
+                     
                         break;
 
 
