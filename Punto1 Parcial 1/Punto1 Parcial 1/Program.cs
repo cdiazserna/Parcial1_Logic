@@ -27,8 +27,9 @@ namespace Punto1_Parcial_1
                             Console.WriteLine("3. Calcular triangulo");
                             Console.WriteLine("4. Calcular círculo");
                             Console.WriteLine("0. Salir");
-
-                    response = Convert.ToInt32(Console.ReadLine());
+                            
+                            response = Convert.ToInt32(Console.ReadLine());
+                            Console.Clear();
                             
 
                                 if (response == 1 | response == 2 | response == 3 | response == 4 | response == 0 )
@@ -59,6 +60,7 @@ namespace Punto1_Parcial_1
                                         double lado = Convert.ToDouble(Console.ReadLine());
                                         double area = lado * lado;
                                         Console.WriteLine("El área del cuadrado es: " + area);
+                                        Console.WriteLine("");
                                         switch1 = true;
                                         switchPrincipal= true;
                                         break;
@@ -70,8 +72,9 @@ namespace Punto1_Parcial_1
                                             double ancho = Convert.ToDouble(Console.ReadLine());
                                             area = largo * ancho;
                                             Console.WriteLine("El área del rectángulo es: " + area);
+                                            Console.WriteLine("");
 
-                                            switch1 = true;
+                                           switch1 = true;
                                             switchPrincipal = true;
                                             break;
 
@@ -83,15 +86,20 @@ namespace Punto1_Parcial_1
                                         double alturaTriangulo = Convert.ToDouble(Console.ReadLine());
                                         area = (baseTriangulo * alturaTriangulo) / 2;
                                         Console.WriteLine("El área del triángulo es: " + area);
+                                        Console.WriteLine("");
+
+                                        switch1 = true;
+                                        switchPrincipal = true;
                                         break;
 
                                         case 4:
                                         Console.WriteLine("Ingrese el radio del círculo:");
                                         double radio = Convert.ToDouble(Console.ReadLine());
-                                        double area = 3.14159 * radio * radio;
+                                        area = 3.14159 * radio * radio;
                                         Console.WriteLine("El área del círculo es: " + area);
-
-                            Console.WriteLine("Circulo");
+                                        Console.WriteLine("");
+                                        switch1 = true;
+                                        switchPrincipal = true;
                                         break;
                                 }
 
