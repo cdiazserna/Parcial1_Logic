@@ -42,16 +42,18 @@ namespace ConsoleApp1
                     Console.WriteLine("ha salido correctamente.la ejecución ha finalizado");
                     switchPrincipal= false;
                 }
+                /*
                 else
                 {
                     switch (response)
                     {
                         case 1:
                             double baseRectangulo, areaRectangulo;
-                            Console.WriteLine("Calculadora de área de un cuadrado\n");
-                            Console.Write("Ingresa la base del cuadrado: ");
+                            Console.WriteLine("Calculadora de área de un rectángulo\n");
+                            Console.Write("Ingresa la base del rectángulo: ");
                             baseRectangulo = Convert.ToDouble(Console.ReadLine());
 
+                            switch1 = false;
 
                             areaRectangulo = baseRectangulo * baseRectangulo;
                             Console.WriteLine("El área del cuadrado es: " + areaRectangulo);
@@ -66,6 +68,8 @@ namespace ConsoleApp1
                             baseRectangulo = Convert.ToDouble(Console.ReadLine());
                             Console.Write("Ingresa la altura del rectángulo: ");
                             alturaRectangulo = Convert.ToDouble(Console.ReadLine());
+
+                            switch1 = false;
 
                             areaRectangulo = baseRectangulo * alturaRectangulo;
 
@@ -84,6 +88,8 @@ namespace ConsoleApp1
 
                             areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
 
+                            switch1 = false;
+
                             Console.WriteLine("El área del triángulo es: " + areaTriangulo);
                             break;
 
@@ -93,7 +99,9 @@ namespace ConsoleApp1
 
                             Console.WriteLine("Calculadora de área de un círculo\n");
                             Console.Write("Ingresa el radio del círculo: ");
-                            radio = Convert.ToDouble(Console.ReadLine()); 
+                            radio = Convert.ToDouble(Console.ReadLine());
+
+                            switch1 = false;
 
                             area = 3.1416 * (radio * radio);
 
@@ -104,9 +112,11 @@ namespace ConsoleApp1
 
                 }
 
-
+*/
             }
+                
         }
+                
     }
 }
 
