@@ -26,24 +26,25 @@ namespace Punto_2
 
 
                 double suma = 0;
+                double mayor1 = 0;
                 for (int i = 1; i <= n; i++)
                 {
-                    double mayor1 = 0;
+                    mayor1 = 0;
                     Console.WriteLine("Ingrese el número " + i + ":");
                     double numero = Convert.ToDouble(Console.ReadLine());
                     suma += numero;
 
-                    if (numero > mayor1)
+                    if (numero > mayor1 | i ==1)
                     {
                         mayor1 = numero;
 
                     }
-                    Console.WriteLine("el numero mayor es: "+mayor1+ ":");
+                    
                 }
                 double promedio = suma / n;
 
-
-
+                double mayor2 = mayor1;
+                Console.WriteLine("el numero mayor es: " + mayor1);
 
 
 
