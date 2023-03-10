@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography;
 
 namespace PUNTO1
 {
@@ -14,7 +13,7 @@ namespace PUNTO1
             double primernum, segundonum;
             double cuad, tria, rect, circ;
             int menu = 1;
-            int resultado;
+            int opcionmenu;
 
             while (menu == 1)
             {
@@ -27,36 +26,53 @@ namespace PUNTO1
                 Console.WriteLine("Calcular el área de un triángulo (PRESIONE 3)");
                 Console.WriteLine("Calcular el área de un círculo (PRESIONE 4)");
 
-                resultado = Convert.ToInt32(Console.ReadLine());
+                opcionmenu = Convert.ToInt32(Console.ReadLine());
 
-                switch (resultado)
+                switch (opcionmenu)
                 {
                     case 1:
-                        suma = primernumero + segundonumero;
-                        Console.WriteLine("El resultado de la suma es:" + suma);
+                        Console.Clear();
+                        Console.WriteLine("CALCULAR ÁREA DE UN CUADRADO");
+                        Console.WriteLine("Ingrese el valor del lado de su cuadrado");
+
+                        primernum = Convert.ToInt32(Console.ReadLine());
+
+                        cuad = primernum * primernum;
+                        Console.WriteLine("El área de su cuadrado es:" + cuad);
                         break;
 
                     case 2:
-                        resta = primernumero - segundonumero;
-                        Console.WriteLine("El resultado de la resta es:" + resta);
+                        Console.Clear();
+                        Console.WriteLine("CALCULAR ÁREA DE UN RECTANGULO");
+                        Console.WriteLine("Ingrese el valor de la base");
+                        primernum = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ingrese el valor de la altura");
+                        segundonum = Convert.ToInt32(Console.ReadLine());
+
+                        rect = primernum * segundonum;
+                        Console.WriteLine("El área de su rectangulo es:" + rect);
                         break;
 
                     case 3:
-                        mult = primernumero * segundonumero;
-                        Console.WriteLine("El resultado de la multiplicación es:" + mult);
+                        Console.Clear();
+                        Console.WriteLine("CALCULAR ÁREA DE UN TRIÁNGULO");
+                        Console.WriteLine("Ingrese el valor de la base");
+                        primernum = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ingrese el valor de la altura");
+                        segundonum = Convert.ToInt32(Console.ReadLine());
+
+                        tria = (primernum + segundonum) / 2;
+                        Console.WriteLine("El área de su triángulo es:" + tria);
                         break;
-
                     case 4:
-                        if (segundonumero == 0)
-                        {
-                            Console.WriteLine("La división es indeterminada");
+                        Console.Clear();
+                        Console.WriteLine("CALCULAR ÁREA DE UN CÍRCULO");
+                        Console.WriteLine("Ingrese el valor del Radio de su círculo");
 
-                        }
-                        else
-                        {
-                            division = primernumero / segundonumero;
-                            Console.WriteLine("El resultado de la división es:" + division);
-                        }
+                        primernum = Convert.ToInt32(Console.ReadLine());
+
+                        circ = Math.PI * Math.Pow(primernum, 2);
+                        Console.WriteLine("El área de su círculo es:" + circ);
 
                         break;
 
@@ -64,6 +80,10 @@ namespace PUNTO1
                         Console.WriteLine("Presione una opción válida");
                         break;
                 }
+
+            }
+
+
 
         }
     }
