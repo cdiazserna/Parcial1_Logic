@@ -58,8 +58,6 @@ namespace ConsoleApp1
                             case 3:
 
                             Console.WriteLine("Triangulo");
-
-                            
                             break;
 
                             case 4:
