@@ -8,7 +8,7 @@ namespace PUNTO2
         {
             int numeros, NUM,
             double promediototal;
-            int nummayor, nummenor, numprimos, sumanumero;
+            int nummayor=0, nummenor, numprimos=0, sumanumero;
             int operadorfor;
 
             Console.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
@@ -25,7 +25,27 @@ namespace PUNTO2
                 Console.WriteLine("Ingresa los números por favor");
                 NUM=Convert.ToInt32(Console.ReadLine()) ;
 
+                if (operadorfor == 0)
+                {
+                    nummayor = numeros;
+                    nummenor = numeros;
+                }
+                else
+                {
+                    if (numeros > nummayor)
+                    {
+                        nummayor = numeros;
+                    }
+                    if (numeros < nummayor)
+                    {
+                        nummenor = numeros;
+                    }
+                }
 
+                if (numprimos(numeros))
+                {
+                    numprimos++;
+                }
             }
 
         }
